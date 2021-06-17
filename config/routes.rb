@@ -2,9 +2,9 @@ Rails.application.routes.draw do
   root 'content#land'
 
 
-  get 'content/projects'
+  get 'content/projects',  to: 'content#projects'
   get 'content/ruby'
-  get 'content/quiz'
+  get 'content/quiz',      to: 'content#quiz'
   get 'content/angular'
   get 'content/nodejs'
   get 'dashboard/index'

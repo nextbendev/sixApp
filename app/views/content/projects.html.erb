@@ -1,2 +1,24 @@
-<h1>Content#projects</h1>
-<p>Find me in app/views/content/projects.html.erb</p>
+<h1>Welcome Everyone</h1>
+		<a href="#" class="myLink">Click Me</a>
+    <p class="nav-item">
+    <p><%= link_to "home", root_path, :class => "nav-link active btn-danger"  %></p>
+    </p>
+
+<script>
+  $(document).ready(function(){
+
+				$('.myLink').on('mouseenter', function(){
+					$('h1').addClass('red');
+				});
+
+				$('.myLink').on('mouseleave', function(){
+					$('h1').removeClass('red');
+				});
+
+				$('.myLink').click(function(){
+					//$('h1').append('<h3>Hello World</h3>');
+					$('h1').css('font-size','40px');
+				});
+			});
+
+</script>
