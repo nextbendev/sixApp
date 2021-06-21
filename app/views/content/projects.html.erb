@@ -1,24 +1,28 @@
+<style>
+	.red{color:red;}
+	.green{color:green;};
+	.blue{color:blue;}
+</style>
+
 <h1>Welcome Everyone</h1>
-		<a href="#" class="myLink">Click Me</a>
-    <p class="nav-item">
-    <p><%= link_to "home", root_path, :class => "nav-link active btn-danger"  %></p>
-    </p>
 
+<a href="#" class="myLink">Click Me</a>
 <script>
-  $(document).ready(function(){
+	$(document).ready(function(){
 
-				$('.myLink').on('mouseenter', function(){
-					$('h1').addClass('red');
-				});
+					$('.myLink').on('mouseenter', function(){
+						$('h1').addClass('red');
+					});
 
-				$('.myLink').on('mouseleave', function(){
-					$('h1').removeClass('red');
-				});
+					$('.myLink').on('mouseleave', function(){
+						$('h1').removeClass('red');
+					});
 
-				$('.myLink').click(function(){
-					//$('h1').append('<h3>Hello World</h3>');
+					$('.myLink').click(function(){
+					$('h1').append('<h3>Hello World</h3>');
 					$('h1').css('font-size','40px');
 				});
-			});
 
+				});
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
