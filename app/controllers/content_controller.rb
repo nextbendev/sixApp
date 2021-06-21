@@ -8,7 +8,7 @@ class ContentController < ApplicationController
   def quiz
   end
 
-  def angular
+  def game
   end
 
   def nodejs
